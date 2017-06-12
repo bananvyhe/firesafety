@@ -13,14 +13,17 @@
  *= require_tree .
  *= require_self
  */
-@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+$font-main:  'Ubuntu', sans-serif;
+
 html {
   height: 100%;
-  overflow-x: hidden; }
+  overflow-x:hidden;
+}
 
 body {
   height: 100%;
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 300; }
-
-/*# sourceMappingURL=application.css.map */
+  font-family: $font-main;
+  font-weight: 300;
+  
+}
