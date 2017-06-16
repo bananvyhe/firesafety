@@ -1,10 +1,11 @@
 require_relative 'boot'
 
 require 'rails/all'
-
+require 'susy' 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
+
 
 module Firesafety
   class Application < Rails::Application

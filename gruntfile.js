@@ -1,8 +1,8 @@
 module.exports = function(grunt) {  
   //grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-sass');
-   
+ // grunt.loadNpmTasks('grunt-contrib-sass');
+   require('load-grunt-tasks')(grunt);
   //var compass = require('compass-importer');
   grunt.registerTask('default', ['watch','sass']);
 
@@ -20,11 +20,14 @@ module.exports = function(grunt) {
       // options: {
       //     importer: compass
       // },
-      dev: {
-        
+      dist: {
+        options: {
+          style: 'expanded',
+          require: 'susy'
+        },
 
         files: {
-          'app/assets/stylesheets/application.css': 'app/assets/stylesheets/application.css.scss',
+          'app/assets/stylesheets/application.css': 'app/assets/stylesheets/application.scss',
         },
         
         
@@ -47,9 +50,11 @@ module.exports = function(grunt) {
         ],
 
      
-        tasks: ['sass:dev'],
+        tasks: ['sass:dist'],
         options: { 
-          livereload: true,
+
+          
+          livereload: true
         },
               
       }, //sass

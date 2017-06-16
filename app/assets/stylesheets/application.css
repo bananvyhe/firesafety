@@ -14,8 +14,55 @@
  *= require_self
  */
 @import url("https://fonts.googleapis.com/css?family=Ubuntu");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
 html {
-  height: 100%;
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+html {
+  height: 300%;
   overflow-x: hidden; }
 
 body {
@@ -23,4 +70,80 @@ body {
   font-family: "Ubuntu", sans-serif;
   font-weight: 300; }
 
-/*# sourceMappingURL=application.css.map */
+#main {
+  max-width: 60em;
+  margin-left: auto;
+  margin-right: auto; }
+  #main:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  @media (min-width: 75em) {
+    #main {
+      max-width: 75em;
+      margin-left: auto;
+      margin-right: auto; }
+      #main:after {
+        content: " ";
+        display: block;
+        clear: both; } }
+
+* html {
+  font-size: 87.5%; }
+
+html {
+  font-size: 14px;
+  line-height: 1.5em; }
+
+@media (min-width: 47em) {
+  * html {
+    font-size: 100%; }
+  html {
+    font-size: 16px;
+    line-height: 1.5em; } }
+
+@media (min-width: 75em) {
+  * html {
+    font-size: 100%; }
+  html {
+    font-size: 16px;
+    line-height: 1.5em; } }
+
+.debug {
+  background-image: -owg-linear-gradient(bottom, #f0a2c4 5%, rgba(240, 162, 196, 0) 5%);
+  background-image: -webkit-linear-gradient(bottom, #f0a2c4 5%, rgba(240, 162, 196, 0) 5%);
+  background-image: -moz-linear-gradient(bottom, #f0a2c4 5%, rgba(240, 162, 196, 0) 5%);
+  background-image: -o-linear-gradient(bottom, #f0a2c4 5%, rgba(240, 162, 196, 0) 5%);
+  background-image: linear-gradient(bottom, #f0a2c4 5%, rgba(240, 162, 196, 0) 5%);
+  -webkit-background-size: 100% 1.5em;
+  -moz-background-size: 100% 1.5em;
+  -o-background-size: 100% 1.5em;
+  background-size: 100% 1.5em;
+  background-position: left top; }
+
+img, iframe {
+  margin: auto;
+  display: block;
+  max-width: 100%;
+  margin-bottom: 1.5em; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  margin-top: 1.5em; }
+
+p {
+  margin-bottom: 1.5em; }
+
+#content {
+  background-color: #ada;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+  padding-left: 1%;
+  padding-right: 1%;
+  height: 100%;
+  box-shadow: 0 0 15px dimgray;
+  background-color: dimgray;
+  opacity: 0.7; }

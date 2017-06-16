@@ -20,7 +20,8 @@
   },
   "homepage": "https://github.com/bananvyhe/firesafety#readme",
   "devDependencies": {
-    "grunt-contrib-sass": "^1.0.0",
-    "grunt-contrib-watch": "^1.0.0"
+    "compass-sass-mixins": "^0.12.7",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.0.0"
   }
 }

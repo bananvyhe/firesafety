@@ -1,0 +1,127 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "../../../node_modules/compass-sass-mixins/lib/compass/typography";
+@import "../../../node_modules/compass-sass-mixins/lib/compass/reset";
+@import "../../../node_modules/compass-sass-mixins/lib/compass/css3";
+@import "../../../node_modules/compass-sass-mixins/lib/susy";
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+$susy: (
+  columns: 10,
+  gutters: 1/4,
+  container: 60em,
+  math: fluid,
+  output: float,
+  gutter-position: inside,
+);
+$font-main:  'Ubuntu', sans-serif;
+
+$line1: 14px;
+$line2: 16px;
+$line3: 22px;
+
+$PRUSSIANBLUE: #0D2C54;
+$ORIOLESORANGE: #F6511D;
+
+
+$small                : 30em;
+$medium               : 47em;
+$large                : 75em;
+
+$grid-background-baseline-color: lighten(#D72272, 30%) !global;
+
+@mixin uwd-rhytm-config($size) {
+  $base-font-size: $size !global;
+  $base-line-height: $size * 1.5 !global;
+  $rhythm-unit: "rem" !global;
+  $rem-with-px-fallback: true !global;
+}
+
+
+html {
+  height: 300%;
+  overflow-x:hidden;
+}
+
+body {
+  height: 100%;
+  font-family: $font-main;
+  font-weight: 300;
+  
+}
+
+#main {
+  @include container();
+  @include susy-media ($large) {
+   @include container(75em);
+  }
+}
+
+@include uwd-rhytm-config($line1);
+@include establish-baseline;
+
+@include susy-media ($medium) {
+  @include uwd-rhytm-config($line2);
+  @include establish-baseline;
+}
+
+@include susy-media ($large) {
+  @include uwd-rhytm-config($line3);
+  $base-font-size: $line2 !global;
+  $base-line-height: $line2 * 1.5 !global;
+  @include establish-baseline;
+}
+
+
+
+.debug {
+  @include debug-vertical-alignment;
+}
+
+img, iframe {
+  margin: auto;
+  display: block;
+  max-width: 100%;
+  @include margin-trailer;
+}
+
+h1, h2, h3, h4, h5, h6  {
+  font-weight: 700;
+  
+  @include margin-leader(1);
+}
+
+p {
+  @include margin-trailer(1);
+}
+
+@mixin block($name) {
+  //background-color: lighten(dimgray, 10%);
+  // border-radius: 0px 0px 6px 6px;
+  @media (min-width: 769px) {
+  //border-radius: 0px 0px 10px 10px;
+  }
+
+}
+
+#content { background-color: #ada;
+  @include span(10);
+  @include block('content');
+  height: 100%;
+  box-shadow: 0 0 15px dimgray;
+  background-color: dimgray;
+  opacity: 0.7;
+} 
