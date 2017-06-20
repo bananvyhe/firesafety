@@ -9,7 +9,9 @@
   "dependencies": {},
   "devDependencies": {
     "graceful-fs": "^4.0.0",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^7.0.0",
+    "minimatch": "^3.0.4"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
