@@ -3,7 +3,7 @@
  @hamster {
 
     /*  Base settings */
-    font-size: 16px;
+    font-size: 26px;
     line-height: 1.5;
 
     font-ratio: minor-third;
@@ -36,6 +36,22 @@
     font-family: "Open Sans", "Segoe UI", "Helvetica Neue", Helvetica, Verdana, Tahoma, Arial, sans-serif;
 
 };
+
+.phone {
+    &_title {
+        width: 500px;
+        @media (max-width: 500px) {
+            width: auto;
+        }
+        body.is_dark & {
+            color: white;
+        }
+    }
+    img {
+        display: block;
+    }
+}
+
 @reset;
  $blue: #056ef0;
 $column: 200px;
