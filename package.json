@@ -20,7 +20,15 @@
   },
   "homepage": "https://github.com/bananvyhe/firesafety#readme",
   "devDependencies": {
+    "autoprefixer": "^7.1.1",
     "grunt-contrib-sass": "^1.0.0",
-    "grunt-contrib-watch": "^1.0.0"
+    "grunt-contrib-watch": "^1.0.0",
+    "gulp": "^3.9.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-postcss": "^7.0.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "postcss": "^6.0.2",
+    "postcss-load-config": "^1.2.0",
+    "precss": "^1.4.0"
   }
 }
