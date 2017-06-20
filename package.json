@@ -1,0 +1,27 @@
+{
+  "name": "pixel",
+  "version": "1.0.0",
+  "description": "This README would normally document whatever steps are necessary to get the application up and running.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "graceful-fs": "^4.0.0",
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bananvyhe/firesafety.git"
+  },
+  "author": "bananvyhe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bananvyhe/firesafety/issues"
+  },
+  "homepage": "https://github.com/bananvyhe/firesafety#readme"
+}
