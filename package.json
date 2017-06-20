@@ -8,10 +8,14 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "autoprefixer": "^7.1.1",
     "graceful-fs": "^4.0.0",
     "gulp": "^3.9.1",
     "gulp-postcss": "^7.0.0",
-    "minimatch": "^3.0.4"
+    "gulp-sourcemaps": "^2.6.0",
+    "minimatch": "^3.0.4",
+    "postcss-scss": "^1.0.1",
+    "precss": "^1.4.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
