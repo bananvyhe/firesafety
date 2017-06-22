@@ -1,23 +1,23 @@
 
 
  .phone img {
-	display: block;
+        display: block;
 };
 
 .phone_title {
-	width: 500px;
+        width: 500px;
 };
 
 body.is_dark .phone_title {
-	color: white;
+        color: white;
 };
 
 @media (max-width: 500px) {;
 
-	.phone_title {
-		width: auto;
-	}
-}
+        .phone_title {
+            width: auto;
+        }
+        }
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -69,8 +69,8 @@ a:hover, a:active {
 }
 
 html {
-	font-size: 162.5%;
-	line-height: 1.5em;
+        font-size: 225%;
+        line-height: 1.5em;
 }
 
 .menu {
@@ -84,6 +84,11 @@ html {
 
  
 .precss {
-  background: green
+    background: green
+}
+
+body {
+  background: url('/app/assets/images/1.jpg');
+
 }
 /*# sourceMappingURL=application.css.map */

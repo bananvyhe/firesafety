@@ -5,7 +5,7 @@ var autoprefixer = require('autoprefixer');
 var precss = require('precss');
 var hamster = require('postcss-hamster');
 var livereload = require('gulp-livereload');
-var nested = require('postcss-nested');
+var assets  = require('postcss-assets');
 
 gulp.task('css', function () {
    var plugins = [
@@ -14,6 +14,9 @@ gulp.task('css', function () {
         }),
         hamster(),
         autoprefixer({browsers: ["> 0.5%"]}),
+        assets({
+          loadPaths: ['app/assets/images/']
+        })
 
         
     ];
